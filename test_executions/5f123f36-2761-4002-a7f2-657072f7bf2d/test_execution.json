@@ -1,0 +1,180 @@
+{
+ "benchmark-version": "1.3.1",
+ "benchmark-revision": null,
+ "environment": "local",
+ "test-execution-id": "5f123f36-2761-4002-a7f2-657072f7bf2d",
+ "test-execution-timestamp": "20240325T140001Z",
+ "pipeline": "benchmark-only",
+ "user-tags": {},
+ "workload": "big5",
+ "provision-config-instance": [
+  "external"
+ ],
+ "cluster": {
+  "revision": "2c355ce1a427e4a528778d4054436b5c4b756221",
+  "distribution-version": "2.12.0",
+  "distribution-flavor": "oss",
+  "provision-config-revision": null
+ },
+ "results": {
+  "op_metrics": [
+   {
+    "task": "index-append",
+    "operation": "index-append",
+    "throughput": {
+     "min": 71366.59687684265,
+     "mean": 72954.24958788107,
+     "median": 72505.61871229619,
+     "max": 77119.29112207195,
+     "unit": "docs/s"
+    },
+    "latency": {
+     "50_0": 35.289699997520074,
+     "90_0": 71.43809999543012,
+     "99_0": 490.33168000198776,
+     "99_9": 1549.2300573986158,
+     "99_99": 2502.3374087790125,
+     "100_0": 3438.842499992461,
+     "mean": 53.84102730621334,
+     "unit": "ms"
+    },
+    "service_time": {
+     "50_0": 35.289699997520074,
+     "90_0": 71.43809999543012,
+     "99_0": 490.33168000198776,
+     "99_9": 1549.2300573986158,
+     "99_99": 2502.3374087790125,
+     "100_0": 3438.842499992461,
+     "mean": 53.84102730621334,
+     "unit": "ms"
+    },
+    "client_processing_time": {
+     "50_0": 0.26819999038707465,
+     "90_0": 0.5884999991394579,
+     "99_0": 3.926618998957568,
+     "99_9": 11.777315609623114,
+     "99_99": 52.35005400056846,
+     "100_0": 313.6868000001414,
+     "mean": 0.4565751839473443,
+     "unit": "ms"
+    },
+    "processing_time": {
+     "50_0": 35.86024999822257,
+     "90_0": 71.98417999607047,
+     "99_0": 491.1637779948192,
+     "99_9": 1549.6589300014043,
+     "99_99": 2502.8064113459814,
+     "100_0": 3439.2480999958934,
+     "mean": 54.435666605005395,
+     "unit": "ms"
+    },
+    "error_rate": 0.0,
+    "duration": 1619251.6174999909
+   },
+   {
+    "task": "wait-until-merges-finish",
+    "operation": "index-stats",
+    "throughput": {
+     "min": 0.017416299155685464,
+     "mean": 0.017416299155685464,
+     "median": 0.017416299155685464,
+     "max": 0.017416299155685464,
+     "unit": "ops/s"
+    },
+    "latency": {
+     "100_0": 57412.867399994866,
+     "mean": 57412.867399994866,
+     "unit": "ms"
+    },
+    "service_time": {
+     "100_0": 57412.867399994866,
+     "mean": 57412.867399994866,
+     "unit": "ms"
+    },
+    "client_processing_time": {
+     "100_0": 5.544899991946295,
+     "mean": 5.544899991946295,
+     "unit": "ms"
+    },
+    "processing_time": {
+     "100_0": 57418.512400006875,
+     "mean": 57418.512400006875,
+     "unit": "ms"
+    },
+    "error_rate": 0.0,
+    "duration": 6.366100002196617
+   }
+  ],
+  "total_time": 25168701,
+  "total_time_per_shard": {
+   "min": 0,
+   "median": 0.0,
+   "max": 9114254,
+   "unit": "ms"
+  },
+  "indexing_throttle_time": 0,
+  "indexing_throttle_time_per_shard": {
+   "min": 0,
+   "median": 0.0,
+   "max": 0,
+   "unit": "ms"
+  },
+  "merge_time": 11347600,
+  "merge_time_per_shard": {
+   "min": 0,
+   "median": 0.0,
+   "max": 3849752,
+   "unit": "ms"
+  },
+  "merge_count": 1245,
+  "refresh_time": 360898,
+  "refresh_time_per_shard": {
+   "min": 0,
+   "median": 1.0,
+   "max": 154503,
+   "unit": "ms"
+  },
+  "refresh_count": 1059,
+  "flush_time": 2063659,
+  "flush_time_per_shard": {
+   "min": 0,
+   "median": 2.5,
+   "max": 929337,
+   "unit": "ms"
+  },
+  "flush_count": 689,
+  "merge_throttle_time": 1783885,
+  "merge_throttle_time_per_shard": {
+   "min": 0,
+   "median": 0.0,
+   "max": 891769,
+   "unit": "ms"
+  },
+  "ml_processing_time": [],
+  "young_gc_time": 27220,
+  "young_gc_count": 1214,
+  "old_gc_time": 0,
+  "old_gc_count": 0,
+  "memory_segments": 0,
+  "memory_doc_values": 0,
+  "memory_terms": 0,
+  "memory_norms": 0,
+  "memory_points": 0,
+  "memory_stored_fields": 0,
+  "store_size": 135368250384,
+  "translog_size": 54052,
+  "segment_count": 124,
+  "total_transform_search_times": [],
+  "total_transform_index_times": [],
+  "total_transform_processing_times": [],
+  "total_transform_throughput": []
+ },
+ "test_procedure": "big5",
+ "workload-params": {
+  "index_name": "big5_lz4",
+  "number_of_replicas": 0,
+  "index_settings": {
+   "codec": "lz4"
+  }
+ }
+}
