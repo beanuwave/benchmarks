@@ -1,0 +1,175 @@
+{
+ "benchmark-version": "1.3.1",
+ "benchmark-revision": null,
+ "environment": "local",
+ "test-execution-id": "a1d4ad96-448e-4049-8800-eb6e6e81e57b",
+ "test-execution-timestamp": "20240321T100944Z",
+ "pipeline": "benchmark-only",
+ "user-tags": {},
+ "workload": "eventdata",
+ "provision-config-instance": [
+  "external"
+ ],
+ "cluster": {
+  "revision": "2c355ce1a427e4a528778d4054436b5c4b756221",
+  "distribution-version": "2.12.0",
+  "distribution-flavor": "oss",
+  "provision-config-revision": null
+ },
+ "results": {
+  "op_metrics": [
+   {
+    "task": "index-append",
+    "operation": "index-append",
+    "throughput": {
+     "min": 61202.67751812066,
+     "mean": 63118.203688323185,
+     "median": 62781.66754232648,
+     "max": 66677.96252892363,
+     "unit": "docs/s"
+    },
+    "latency": {
+     "50_0": 574.2705475131515,
+     "90_0": 770.2477280923631,
+     "99_0": 3324.5130166219374,
+     "99_9": 5541.783020289642,
+     "100_0": 6030.19428596599,
+     "mean": 655.3802485129189,
+     "unit": "ms"
+    },
+    "service_time": {
+     "50_0": 574.2705475131515,
+     "90_0": 770.2477280923631,
+     "99_0": 3324.5130166219374,
+     "99_9": 5541.783020289642,
+     "100_0": 6030.19428596599,
+     "mean": 655.3802485129189,
+     "unit": "ms"
+    },
+    "client_processing_time": {
+     "50_0": 2.456904505379498,
+     "90_0": 8.781802904559301,
+     "99_0": 16.275370279909133,
+     "99_9": 27.871292712225376,
+     "100_0": 39.55148998647928,
+     "mean": 4.183750946781178,
+     "unit": "ms"
+    },
+    "processing_time": {
+     "50_0": 577.8285420092288,
+     "90_0": 773.659393930575,
+     "99_0": 3340.4581564053688,
+     "99_9": 5544.1407544472295,
+     "100_0": 6032.529991003685,
+     "mean": 659.8486307306154,
+     "unit": "ms"
+    },
+    "error_rate": 0.0,
+    "duration": 326568.03492299514
+   },
+   {
+    "task": "wait-until-merges-finish",
+    "operation": "index-stats",
+    "throughput": {
+     "min": 0.9435057809722579,
+     "mean": 0.9435057809722579,
+     "median": 0.9435057809722579,
+     "max": 0.9435057809722579,
+     "unit": "ops/s"
+    },
+    "latency": {
+     "100_0": 1050.2863160218112,
+     "mean": 1050.2863160218112,
+     "unit": "ms"
+    },
+    "service_time": {
+     "100_0": 1050.2863160218112,
+     "mean": 1050.2863160218112,
+     "unit": "ms"
+    },
+    "client_processing_time": {
+     "100_0": 13.580058934167027,
+     "mean": 13.580058934167027,
+     "unit": "ms"
+    },
+    "processing_time": {
+     "100_0": 1064.1647260054015,
+     "mean": 1064.1647260054015,
+     "unit": "ms"
+    },
+    "error_rate": 0.0,
+    "duration": 12.285702978260815
+   }
+  ],
+  "total_time": 40996690,
+  "total_time_per_shard": {
+   "min": 0,
+   "median": 677021,
+   "max": 861483,
+   "unit": "ms"
+  },
+  "indexing_throttle_time": 0,
+  "indexing_throttle_time_per_shard": {
+   "min": 0,
+   "median": 0,
+   "max": 0,
+   "unit": "ms"
+  },
+  "merge_time": 5224295,
+  "merge_time_per_shard": {
+   "min": 0,
+   "median": 80230,
+   "max": 169639,
+   "unit": "ms"
+  },
+  "merge_count": 947,
+  "refresh_time": 822862,
+  "refresh_time_per_shard": {
+   "min": 0,
+   "median": 8644,
+   "max": 75335,
+   "unit": "ms"
+  },
+  "refresh_count": 6059,
+  "flush_time": 2005778,
+  "flush_time_per_shard": {
+   "min": 0,
+   "median": 34356,
+   "max": 48685,
+   "unit": "ms"
+  },
+  "flush_count": 459,
+  "merge_throttle_time": 1321786,
+  "merge_throttle_time_per_shard": {
+   "min": 0,
+   "median": 19886,
+   "max": 49450,
+   "unit": "ms"
+  },
+  "ml_processing_time": [],
+  "young_gc_time": 5837,
+  "young_gc_count": 145,
+  "old_gc_time": 0,
+  "old_gc_count": 0,
+  "memory_segments": 0,
+  "memory_doc_values": 0,
+  "memory_terms": 0,
+  "memory_norms": 0,
+  "memory_points": 0,
+  "memory_stored_fields": 0,
+  "store_size": 73199118240,
+  "translog_size": 6015,
+  "segment_count": 1356,
+  "total_transform_search_times": [],
+  "total_transform_index_times": [],
+  "total_transform_processing_times": [],
+  "total_transform_throughput": []
+ },
+ "test_procedure": "append-no-conflicts",
+ "workload-params": {
+  "index_settings": {
+   "codec": "zstd_no_dict",
+   "codec.compression_level": "4"
+  }
+ }
+}
