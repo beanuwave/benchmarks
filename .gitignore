@@ -1,4 +1,3 @@
 data
-workloads
+!workloads/default/sap_http_logs/**
 *.code-workspace
-!workloads/default/sap_http_logs/*

@@ -1176,7 +1176,7 @@ done
 
 ## create workload from existing index
 ```shell
-opensearch-benchmark create-workload --workload="sap_logs_haproxy" --target-hosts="https://localhost:9200" --client-options=basic_auth_user:<USERNAME>,basic_auth_password:<PASSWORD>,verify_certs:false --distribution-version=2.12.0 --indices="http_logs" --output-path="<WORKDIR_FOR_BENCHMARKS>"
+opensearch-benchmark create-workload --workload="http_logs" --target-hosts="https://localhost:9200" --client-options=basic_auth_user:<USERNAME>,basic_auth_password:<PASSWORD>,verify_certs:false --distribution-version=2.12.0 --indices="http_logs" --output-path="<WORKDIR_FOR_BENCHMARKS>"
 ```
 
 ## execute custom workload
